@@ -1,0 +1,135 @@
+body {
+    display: grid;
+    place-content: center;
+    background-color: #040F0F;
+}
+
+.show_bmi {
+    height:80vh;
+    width: 60vh;
+    display: grid;
+    grid-template-rows: 15vh 15vh 10vh 10vh 20vh 10vh;
+    padding: 20px;
+    margin-top: 3vh;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid #2ecf56;
+}
+
+.glow {
+    box-shadow: 0 0 25px #2ecf56;
+   }
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    color: #2ecf56;
+}
+
+.bmi_form {
+    height:50vh;
+    color: #FCFFFC
+}
+
+.bmi_1 {
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+    align-items: center;
+    font-size: 1.25em;
+}
+
+.bmi_1 div {
+    width: 95%;
+    height: 75%;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.bmi_1 div input {
+    height: 50%;
+    width: 95%;
+    background-color: #040F0F;
+    color: #2ecf56;
+    font-size: 1.1em;
+    border: 2px solid #2D3A3A;
+}
+
+.bmi_1 div input:focus {
+    outline: none;
+}
+
+.bmi_2 {
+    display: flex;
+    width: 100%;
+    font-size: 1.25em;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bmi_3 {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.bmi_3 input {
+    background-color: #040F0F;
+    color: #2ecf56;
+    border: 2px solid #2D3A3A;
+    font-weight: 700;
+    width: 40%;
+    height: 60%;
+    font-size: 1.35em;
+    transition: all 0.2s;
+}
+
+.bmi_3 input:hover { 
+    color: #FCFFFC;
+    background-color: #2ecf56;
+    cursor: pointer;
+}
+
+.bmi_3 input:active {
+    background-color: #248232;
+}
+
+.bmi_output {
+    grid-row: 5 / 7;
+    color: #FCFFFC;
+    text-align: center;
+}
+
+.bmi_op_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.bmi_op_1 h1 {
+    font-size: 3em;
+}
+
+.bmi_op_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .show_bmi {
+        width: 90vw;
+    }
+
+    .container h1 {
+        font-size: 1.5em;
+    }
+}
